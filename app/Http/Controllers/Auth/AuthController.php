@@ -8,7 +8,6 @@ use App\Http\Requests\Auth\loginRequest;
 use App\Http\Requests\Auth\registerRequest;
 use App\Http\Requests\Auth\forgotPasswordRequest;
 use App\Http\Requests\Auth\resetPasswordRequest;
-use App\Models\Partner;
 use Cartalyst\Sentinel\Checkpoints\NotActivatedException;
 use Cartalyst\Sentinel\Checkpoints\ThrottlingException;
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
@@ -126,12 +125,12 @@ class AuthController extends Controller {
                 
                 $code = $activation->code;
                 
-                //$sent = Mail::send('auth.emails.activate', compact('user', 'code'), function ($m) use ($user) {
-                //    $m->to($user->email)
-                //      ->subject('Activate Your Account');
-                //});
+                $sent = Mail::send('auth.emails.activate', compact('user', 'code'), function ($m) use ($user) {
+                    $m->to($user->email)
+                      ->subject('Activate Your Account');
+                });
                 
-                $sent = 1;
+                //$sent = 1;
                 
                 if ($sent === 0) {
                     Session::flash('failed', __('auth.activation_email_unsuccessful'));
@@ -231,7 +230,9 @@ class AuthController extends Controller {
                 $m->to($user->email)
                   ->subject('Reset your account password.');
             });
-            
+
+            //$sent = 1;
+
             if ($sent === 0) {
                 Session::flash('failed', __('auth.forgot_password_unsuccessful'));
 

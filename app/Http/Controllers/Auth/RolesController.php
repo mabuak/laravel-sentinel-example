@@ -5,10 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\Auth\Role;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
-
 use Illuminate\Support\Facades\Session;
 use Yajra\DataTables\Facades\DataTables;
-
 use App\Http\Requests\Auth\Role\createRequest;
 use App\Http\Requests\Auth\Role\updateRequest;
 

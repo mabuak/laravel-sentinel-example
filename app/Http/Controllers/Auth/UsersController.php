@@ -7,7 +7,6 @@ use App\Http\Requests\Auth\User\createRequest;
 use App\Http\Requests\Auth\User\updateRequest;
 use App\Models\Auth\Role;
 use App\Models\Auth\User;
-use Cartalyst\Sentinel\Activations\EloquentActivation;
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
