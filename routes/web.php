@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => '/auth', 'middleware' => 'sentinel.permission:dashboard'], function () {
+    Route::get('', 'HomeController@index')->name('dashboard');
+});
