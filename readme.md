@@ -9,7 +9,7 @@
 * [Additional information](#feature8)
 
 <a name="feature1"></a>
-## Starter Site Features:
+## Features:
 * Laravel 5.5.x
 * Back-End
     * Dashboard.
@@ -27,7 +27,7 @@
 	* Datatables Bundle
 -----
 <a name="feature2"></a>
-##Requirements
+## Requirements
 
 	PHP >= 7.0.0
 	OpenSSL PHP Extension
@@ -37,7 +37,7 @@
 	XML PHP Extension
 -----
 <a name="feature3"></a>
-##How to install:
+## How to install:
 
 * [Step 1: Get the code](#step1)
 * [Step 2: Use Composer to install dependencies](#step2)
