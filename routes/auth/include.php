@@ -11,7 +11,7 @@ $dir   = base_path( 'routes/auth' );
 $files = scandir( $dir );
 
 foreach ( $files as $file ) {
-    if ( ! in_array( $file, array( '.', '..', 'Include.php' ) ) ) {
+    if ( ! in_array( $file, array( '.', '..', 'include.php' ) ) ) {
         require $dir . '/' . $file;
     }
 };
