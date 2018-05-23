@@ -29,8 +29,6 @@ class UserSeeder extends Seeder {
                 ->create( [
                     'name'       => 'Root',
                     'slug'       => 'root',
-                    'created_by' => 'Migration',
-                    'updated_by' => 'Migration',
                 ] )
                 ->users()
                 ->attach( $userDb );
@@ -41,8 +39,6 @@ class UserSeeder extends Seeder {
                     'name'       => 'User',
                     'slug'       => 'user',
                     'permissions'=> ['dashboard' => true],
-                    'created_by' => 'Migration',
-                    'updated_by' => 'Migration',
                 ] );
     }
 }

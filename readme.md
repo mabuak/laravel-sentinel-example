@@ -123,7 +123,7 @@ OR
 ## Need a UI?
 
 The package doesn't come with any screens out of the box, you should build that yourself. 
-To get started check out this [demo link](https://sentinel-example.dhanhost.com)
+To get started check out this [demo link](https://sentinel.dhanhost.com)
 
 <a name="feature7"></a>
 ## License
