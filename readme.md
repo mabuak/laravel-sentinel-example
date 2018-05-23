@@ -96,10 +96,7 @@ OR Run the command " php artisan serve ", and open on the browser the url you ge
 <a name="step5"></a>
 ### Step 5: Start Page
 
-You can now login to admin part of Laravel Framework 5.5  Site:
-
-    username: admin@admin.com
-    password: password
+You can now login to admin part of Laravel Framework 5.5  Site
     
 <a name="feature5"></a>
 ## Troubleshooting
