@@ -123,8 +123,11 @@ OR
 ## Need a UI?
 
 The package doesn't come with any screens out of the box, you should build that yourself. 
-To get started check out this [demo link](https://sentinel.dhanhost.com)
+To get started check out this [demo link](https://sentinel.dhanhost.com) 
 
+    Email : admin@admin.com
+    Password : password
+    
 <a name="feature7"></a>
 ## License
 
