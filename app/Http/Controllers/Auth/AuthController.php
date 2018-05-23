@@ -27,7 +27,7 @@ class AuthController extends Controller {
     public function login() {
         
         if(Sentinel::guest() == false){
-            return redirect()->route('home');
+            return redirect()->route('dashboard');
         }
         
         return view('auth.login');

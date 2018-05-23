@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
-use Yajra\DataTables\Facades\Datatables;
+use Yajra\DataTables\Facades\DataTables;
 
 use Illuminate\Http\Request;
 
